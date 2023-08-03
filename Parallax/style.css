@@ -1,0 +1,71 @@
+/**{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;             HARD RESET A CSS-EN
+}
+*/
+/* border-box::: AZ ELEM SZÉLESSÉGÉT NEM FOGJA BEFOLYÁSOLNI A PADDING ÉS A BORDER */
+
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax-img1, .parallax-img2, .parallax-img3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;   /* A gördítés effekthez kell */
+}
+
+.parallax-img1{
+    background-image: url('img/image1.jpg');
+    min-height: 100vh;
+}
+
+.parallax-img2{
+    background-image: url('img/image2.jpg');
+    min-height: 400px;
+}
+
+.parallax-img3{
+    background-image: url('img/image3.jpg');
+    min-height: 400px;
+}
+
+article{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.border{
+    background: #111;
+    color: wheat;
+    padding: 20px;
+}
+span{
+    color: white;
+}
+
+section{
+    text-align: center;
+    padding: 80px 150px;
+}
+
+.section-light{
+    background-color: #f2f2f2;
+    color: #111;
+}
+.section-dark{
+    background-color: #444444;
+    color: #f2f2f2;
+}
